@@ -4,7 +4,7 @@ import { useQuery } from 'react-query';
 import type { TaskModel } from '../../../../domain/models/task-model';
 import { fetchTasks, taskKeys } from '../../queries/tasks';
 import { TaskLI } from '../TaskLI';
-import * as Styled from './style';
+import * as classes from './style.css';
 
 type ContainerProps = {};
 
@@ -28,11 +28,11 @@ export const View: React.VFC<Props> = (props) => (
       }
 
       return (
-        <Styled.UList>
+        <ul className={classes.ul}>
           {props.data?.map((task) => (
             <TaskLIMemoized key={task.id} {...task} />
           ))}
-        </Styled.UList>
+        </ul>
       );
     })()}
   </>
