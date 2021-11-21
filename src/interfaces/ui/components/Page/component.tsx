@@ -8,7 +8,7 @@ type Props = {} & ContainerProps;
 
 export const View: React.VFC<Props> = () => (
   <main className={classes.main}>
-    <h1>Tasks</h1>
+    <h1 className={classes.h1}>Tasks</h1>
     <NewTaskForm />
     <div className={classes.ulWrapper}>
       <TaskUList />

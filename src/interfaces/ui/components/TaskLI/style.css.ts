@@ -1,34 +1,32 @@
 import { style, styleVariants } from '@vanilla-extract/css';
-import { calc } from '@vanilla-extract/css-utils';
 
+import { sprinkles } from '../../style/sprinkles.css';
 import { vars } from '../../style/theme.css';
 import { ul } from '../TaskUList/style.css';
 
+const AREA_INPUT = 'input';
+const AREA_LABEL = 'label';
+const AREA_DELETE = 'delete';
+
 export const li = style({
   display: 'grid',
-  gridTemplate: `'input . label . delete' ${calc.multiply(
-    vars.space,
-    8,
-  )} / max-content ${calc(vars.space).multiply(2)} 1fr ${calc.multiply(
-    vars.space,
-    2,
-  )} max-content`,
+  gridTemplate: `'${AREA_INPUT} . ${AREA_LABEL} . ${AREA_DELETE}' ${vars.spacing[8]} / max-content ${vars.spacing[2]} 1fr ${vars.spacing[2]} max-content`,
   alignItems: 'center',
   width: '100%',
   selectors: {
     // @todo 依存を逆転
     [`${ul} > &:not(:first-child)`]: {
-      marginTop: calc(vars.space).multiply(3).toString(),
+      marginTop: vars.spacing[3],
     },
   },
 });
 
 export const input = style({
-  gridArea: 'input',
+  gridArea: AREA_INPUT,
 });
 
 const labelBase = style({
-  gridArea: 'label',
+  gridArea: AREA_LABEL,
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   whiteSpace: 'nowrap',
@@ -38,19 +36,27 @@ export const label = styleVariants({
   'done.true': [
     labelBase,
     {
-      color: vars.color.black70,
       textDecoration: 'line-through',
     },
+    sprinkles({
+      color: {
+        lightMode: 'black70',
+        darkMode: 'white70',
+      },
+    }),
   ],
   'done.false': [
     labelBase,
-    {
-      color: vars.color.black,
-    },
+    sprinkles({
+      color: {
+        lightMode: 'black',
+        darkMode: 'white',
+      },
+    }),
   ],
 });
 
 export const button = style({
-  gridArea: 'delete',
-  height: calc(vars.space).multiply(8).toString(),
+  gridArea: AREA_DELETE,
+  height: vars.spacing[8],
 });

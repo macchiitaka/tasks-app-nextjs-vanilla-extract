@@ -1,9 +1,19 @@
 import { createGlobalTheme } from '@vanilla-extract/css';
 
 export const vars = createGlobalTheme(':root', {
-  color: {
+  palette: {
+    white: 'rgba(255, 255, 255, 1)',
+    white70: 'rgba(255, 255, 255, 0.7)',
     black: 'rgba(0, 0, 0, 1)',
     black70: 'rgba(0, 0, 0, 0.7)',
   },
-  space: '4px',
+  fontFamily:
+    '"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif',
+  spacing: {
+    '1': '4px',
+    '2': '8px',
+    '3': '12px',
+    '4': '16px',
+    '8': '32px',
+  },
 });

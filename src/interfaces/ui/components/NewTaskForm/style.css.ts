@@ -1,26 +1,23 @@
 import { style } from '@vanilla-extract/css';
-import { calc } from '@vanilla-extract/css-utils';
 
 import { vars } from '../../style/theme.css';
 
 export const form = style({
   display: 'grid',
-  gridTemplate: `'input . submit' ${calc.multiply(vars.space, 8)} / 1fr ${calc(
-    vars.space,
-  ).multiply(2)} max-content`,
+  gridTemplate: `'input . submit' ${vars.spacing[8]} / 1fr ${vars.spacing[2]} max-content`,
   alignItems: 'center',
   width: '100%',
 });
 
 const base = {
-  height: calc(vars.space).multiply(8).toString(),
+  height: vars.spacing[8],
 };
 
 export const input = style([
   base,
   {
     boxSizing: 'border-box',
-    padding: `0 ${calc(vars.space).multiply(2)}`,
+    padding: `0 ${vars.spacing[2]}`,
     gridArea: 'input',
   },
 ]);
