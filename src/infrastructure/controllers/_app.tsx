@@ -6,6 +6,9 @@ import { useMemo } from 'react';
 import type { DehydratedState } from 'react-query';
 import { Hydrate, QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
+
+import * as classes from './style.css';
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type GetConstructorArgs<T> = T extends new (...args: infer U) => any
   ? U
@@ -43,7 +46,9 @@ export const Provider: FC<{
 };
 
 export const MyApp = ({ Component, pageProps }: AppProps) => (
-  <Provider dehydratedState={pageProps.dehydratedState}>
-    <Component {...pageProps} />
-  </Provider>
+  <div className={classes.root}>
+    <Provider dehydratedState={pageProps.dehydratedState}>
+      <Component {...pageProps} />
+    </Provider>
+  </div>
 );

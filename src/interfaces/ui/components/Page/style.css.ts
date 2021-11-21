@@ -1,12 +1,19 @@
 import { style } from '@vanilla-extract/css';
-import { calc } from '@vanilla-extract/css-utils';
 
+import { sprinkles } from '../../style/sprinkles.css';
 import { vars } from '../../style/theme.css';
 
 export const main = style({
-  padding: `${calc(vars.space).multiply(2)} ${calc(vars.space).multiply(8)}`,
+  padding: `${vars.spacing[2]} ${vars.spacing[8]}`,
+});
+
+export const h1 = sprinkles({
+  color: {
+    lightMode: 'black',
+    darkMode: 'white',
+  },
 });
 
 export const ulWrapper = style({
-  paddingTop: calc(vars.space).multiply(4).toString(),
+  paddingTop: vars.spacing[4],
 });
