@@ -2,7 +2,7 @@ import type { ChangeEvent, FormEvent } from 'react';
 import { useCallback, useState } from 'react';
 
 import { useSubmitHandler } from './hook';
-import * as Styled from './style';
+import * as classes from './style.css';
 
 type ContainerProps = {};
 
@@ -13,8 +13,9 @@ type Props = {
 } & ContainerProps;
 
 export const View: React.VFC<Props> = (props) => (
-  <Styled.Form onSubmit={props.onSubmit}>
-    <Styled.Input
+  <form className={classes.form} onSubmit={props.onSubmit}>
+    <input
+      className={classes.input}
       type="text"
       name="task"
       value={props.value}
@@ -25,8 +26,10 @@ export const View: React.VFC<Props> = (props) => (
       placeholder="Add task"
       aria-label="New task"
     />
-    <Styled.Button type="submit">Add</Styled.Button>
-  </Styled.Form>
+    <button className={classes.button} type="submit">
+      Add
+    </button>
+  </form>
 );
 
 export const NewTaskForm: React.VFC<ContainerProps> = (props) => {

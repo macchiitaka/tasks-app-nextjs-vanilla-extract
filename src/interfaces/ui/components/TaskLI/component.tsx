@@ -2,7 +2,7 @@ import type { ChangeEvent } from 'react';
 
 import type { TaskModel } from '../../../../domain/models/task-model';
 import { useChangeDoneHandler, useClickDeleteHandler } from './hook';
-import * as Styled from './style';
+import * as classes from './style.css';
 
 type ContainerProps = TaskModel;
 
@@ -15,18 +15,25 @@ export const View: React.VFC<Props> = (props) => {
   const id = `item_${props.id}`;
 
   return (
-    <Styled.LI>
-      <Styled.Input
+    <li className={classes.li}>
+      <input
+        className={classes.input}
         type="checkbox"
         id={id}
         checked={props.done}
         onChange={props.onChangeDone}
       />
-      <Styled.Label htmlFor={id}>{props.title}</Styled.Label>
-      <Styled.Button type="button" onClick={props.onClickDelete}>
+      <label className={classes.label} htmlFor={id}>
+        {props.title}
+      </label>
+      <button
+        className={classes.button}
+        type="button"
+        onClick={props.onClickDelete}
+      >
         Delete
-      </Styled.Button>
-    </Styled.LI>
+      </button>
+    </li>
   );
 };
 
