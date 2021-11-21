@@ -23,7 +23,7 @@ export const View: React.VFC<Props> = (props) => {
         checked={props.done}
         onChange={props.onChangeDone}
       />
-      <label className={classes.label} htmlFor={id}>
+      <label className={classes.label[`done.${props.done}`]} htmlFor={id}>
         {props.title}
       </label>
       <button

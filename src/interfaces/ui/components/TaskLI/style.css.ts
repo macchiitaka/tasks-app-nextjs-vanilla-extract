@@ -1,4 +1,4 @@
-import { style } from '@vanilla-extract/css';
+import { style, styleVariants } from '@vanilla-extract/css';
 import { calc } from '@vanilla-extract/css-utils';
 
 import { vars } from '../../style/theme.css';
@@ -27,18 +27,27 @@ export const input = style({
   gridArea: 'input',
 });
 
-export const label = style({
+const labelBase = style({
   gridArea: 'label',
   overflow: 'hidden',
-  color: vars.color.black,
   textOverflow: 'ellipsis',
   whiteSpace: 'nowrap',
-  selectors: {
-    [`${input}:checked + &`]: {
+});
+
+export const label = styleVariants({
+  'done.true': [
+    labelBase,
+    {
       color: vars.color.black70,
       textDecoration: 'line-through',
     },
-  },
+  ],
+  'done.false': [
+    labelBase,
+    {
+      color: vars.color.black,
+    },
+  ],
 });
 
 export const button = style({
