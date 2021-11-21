@@ -2,12 +2,11 @@ import '../../interfaces/ui/style/global.css';
 
 import type { AppProps } from 'next/app';
 import type { FC } from 'react';
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import type { DehydratedState } from 'react-query';
 import { Hydrate, QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 
-import { ColorSchemeContext } from '../../interfaces/ui/style/color-scheme';
 import * as classes from './style.css';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -46,32 +45,10 @@ export const Provider: FC<{
   );
 };
 
-export const MyApp = ({ Component, pageProps }: AppProps) => {
-  const [colorScheme, setColorScheme] = useState<'dark' | 'light'>('light');
-
-  useEffect(() => {
-    setColorScheme(
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-        ? 'dark'
-        : 'light',
-    );
-    const listener = (e: MediaQueryListEvent) => {
-      setColorScheme(e.matches ? 'dark' : 'light');
-    };
-    const mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
-    mediaQueryList.addEventListener('change', listener);
-    return () => {
-      mediaQueryList.removeEventListener('change', listener);
-    };
-  });
-
-  return (
+export const MyApp = ({ Component, pageProps }: AppProps) => (
+  <div className={classes.root}>
     <Provider dehydratedState={pageProps.dehydratedState}>
-      <ColorSchemeContext.Provider value={colorScheme}>
-        <div className={classes.root[colorScheme]}>
-          <Component {...pageProps} />
-        </div>
-      </ColorSchemeContext.Provider>
+      <Component {...pageProps} />
     </Provider>
-  );
-};
+  </div>
+);

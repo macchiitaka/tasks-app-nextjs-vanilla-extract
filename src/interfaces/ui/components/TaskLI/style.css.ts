@@ -1,6 +1,6 @@
-import { style } from '@vanilla-extract/css';
-import { recipe } from '@vanilla-extract/recipes';
+import { style, styleVariants } from '@vanilla-extract/css';
 
+import { sprinkles } from '../../style/sprinkles.css';
 import { vars } from '../../style/theme.css';
 import { ul } from '../TaskUList/style.css';
 
@@ -32,48 +32,28 @@ const labelBase = style({
   whiteSpace: 'nowrap',
 });
 
-export const label = recipe({
-  base: labelBase,
-  variants: {
-    colorScheme: {
-      light: {
-        color: vars.palette.black,
-      },
-      dark: {
-        color: vars.palette.white,
-      },
-    },
-    done: {
-      true: {
-        textDecoration: 'line-through',
-      },
-      false: {},
-    },
-  },
-  compoundVariants: [
+export const label = styleVariants({
+  'done.true': [
+    labelBase,
     {
-      variants: {
-        colorScheme: 'light',
-        done: true,
-      },
-      style: {
-        color: vars.palette.black70,
-      },
+      textDecoration: 'line-through',
     },
-    {
-      variants: {
-        colorScheme: 'dark',
-        done: true,
+    sprinkles({
+      color: {
+        lightMode: 'black70',
+        darkMode: 'white70',
       },
-      style: {
-        color: vars.palette.white70,
-      },
-    },
+    }),
   ],
-  defaultVariants: {
-    colorScheme: 'light',
-    done: false,
-  },
+  'done.false': [
+    labelBase,
+    sprinkles({
+      color: {
+        lightMode: 'black',
+        darkMode: 'white',
+      },
+    }),
+  ],
 });
 
 export const button = style({
