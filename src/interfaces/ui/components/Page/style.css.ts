@@ -1,17 +1,16 @@
-import { style, styleVariants } from '@vanilla-extract/css';
+import { style } from '@vanilla-extract/css';
 
+import { sprinkles } from '../../style/sprinkles.css';
 import { vars } from '../../style/theme.css';
 
 export const main = style({
-  padding: [vars.spacing[2], vars.spacing[8]].join(' '),
+  padding: `${vars.spacing[2]} ${vars.spacing[8]}`,
 });
 
-export const h1 = styleVariants({
-  light: {
-    color: 'black',
-  },
-  dark: {
-    color: 'white',
+export const h1 = sprinkles({
+  color: {
+    lightMode: 'black',
+    darkMode: 'white',
   },
 });
 
