@@ -1,6 +1,7 @@
 import type { ChangeEvent } from 'react';
 
 import type { TaskModel } from '../../../../domain/models/task-model';
+import { useColorScheme } from '../../style/color-scheme';
 import { useChangeDoneHandler, useClickDeleteHandler } from './hook';
 import * as classes from './style.css';
 
@@ -13,7 +14,7 @@ type Props = {
 
 export const View: React.VFC<Props> = (props) => {
   const id = `item_${props.id}`;
-
+  const colorScheme = useColorScheme();
   return (
     <li className={classes.li}>
       <input
@@ -23,7 +24,13 @@ export const View: React.VFC<Props> = (props) => {
         checked={props.done}
         onChange={props.onChangeDone}
       />
-      <label className={classes.label[`done.${props.done}`]} htmlFor={id}>
+      <label
+        className={classes.label({
+          colorScheme,
+          done: props.done,
+        })}
+        htmlFor={id}
+      >
         {props.title}
       </label>
       <button
