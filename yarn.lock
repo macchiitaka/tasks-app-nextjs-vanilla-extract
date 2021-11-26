@@ -2382,7 +2382,7 @@
     remark "^13.0.0"
     unist-util-find-all-after "^3.0.2"
 
-"@takamachi/eslint-config@^2.2.2":
+"@takamachi/eslint-config@^2.2.3":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@takamachi/eslint-config/-/eslint-config-2.2.3.tgz#44649b6e979a5b94277aa8de59cc47037a147ce8"
   integrity sha512-37dtd2WralJodTZxQRWjKdGdBux4GS8HbXpUdru03g0amls2bOvv8bXa0imT4uAyi1YvPEtizyEx/XXyJ95/wg==
