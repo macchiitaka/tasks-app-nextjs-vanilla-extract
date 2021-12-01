@@ -827,10 +827,10 @@
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css-utils/-/css-utils-0.1.1.tgz#f4f58f85347d8a841ef74c60db111ec264011860"
   integrity sha512-9fDV8IhSfzgDd9Z+64jVcS38S2dVc6c1eOd+hgO8zPMRba6rEB8kEjg5+AQ3xPCdzl1m8olqFHnfQRNOn1OXuA==
 
-"@vanilla-extract/css@^1.6.2", "@vanilla-extract/css@^1.6.4":
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.6.4.tgz#dc29c7795dd51282d96acf12142f77ab01d420d4"
-  integrity sha512-1d9TtujuON4ncIA4FsdUizly6djDx12JoK2Qv/i2YqvQl15NBXI+1OJyZazwieatGMbkkofOtz28PjE69vKuug==
+"@vanilla-extract/css@^1.6.2", "@vanilla-extract/css@^1.6.7":
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.6.7.tgz#d830c66d0dbce599dc3428d2ec54ed7668281a53"
+  integrity sha512-qrlAbbE6nt8jL0K8AB3d6TY6+iMNM4Wj5zIuiHjbH81+wh+SYBZaIGU0f9q97Xa3THDXC+N5h/Z4MLmrORVgvA==
   dependencies:
     "@emotion/hash" "^0.8.0"
     "@vanilla-extract/private" "^1.0.2"
@@ -840,6 +840,7 @@
     csstype "^3.0.7"
     deep-object-diff "^1.1.0"
     deepmerge "^4.2.2"
+    escape-string-regexp "^4.0.0"
     outdent "^0.8.0"
 
 "@vanilla-extract/integration@^1.3.0", "@vanilla-extract/integration@^1.4.3":
