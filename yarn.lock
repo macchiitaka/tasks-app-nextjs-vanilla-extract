@@ -822,7 +822,7 @@
     "@babel/template" "^7.12.13"
     "@vanilla-extract/integration" "^2.0.0"
 
-"@vanilla-extract/css-utils@^0.1.1":
+"@vanilla-extract/css-utils@^0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css-utils/-/css-utils-0.1.2.tgz#6bcd3e45f187d56c319ce9bc36ae1814b373c581"
   integrity sha512-qoxIu5E/UhJtoKsPL1JaU9nhTN0Xl5zYV0pScOgsvc3JN46TvTTt0L3GV8x3PQpZP7x3elw8BsC9czYbhJy9Gg==
