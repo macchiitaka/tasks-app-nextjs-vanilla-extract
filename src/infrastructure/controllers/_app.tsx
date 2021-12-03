@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app';
 import type { FC } from 'react';
 import { useMemo } from 'react';
 import type { DehydratedState } from 'react-query';
-import { Hydrate, QueryClient, QueryClientProvider } from 'react-query';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 
 import * as classes from './style.css';
@@ -34,13 +34,10 @@ export const Provider: FC<{
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Hydrate state={props.dehydratedState}>
-        {process.env.NODE_ENV !== 'production' &&
-          process.env.STORYBOOK !== 'true' && (
-            <ReactQueryDevtools initialIsOpen={false} />
-          )}
-        {props.children}
-      </Hydrate>
+      {process.env.NODE_ENV !== 'production' && (
+        <ReactQueryDevtools initialIsOpen={false} />
+      )}
+      {props.children}
     </QueryClientProvider>
   );
 };
