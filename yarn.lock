@@ -813,7 +813,7 @@
     "@typescript-eslint/types" "5.5.0"
     eslint-visitor-keys "^3.0.0"
 
-"@vanilla-extract/babel-plugin@^1.1.2":
+"@vanilla-extract/babel-plugin@^1.1.3":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin/-/babel-plugin-1.1.3.tgz#a037a04a773c763990e6e219f82c11a780b7704a"
   integrity sha512-pqYdxes92l39Djf493QCtmaz70ssEy/T3R6MX+OmBKIwY5c+eWlp/45TmEzPSi22S4AzoHa6mdS3/PWIR+YJwA==
