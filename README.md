@@ -1,10 +1,10 @@
 # tasks-app-nextjs
 
-[![Contiinuous Integration](https://github.com/macchiitaka/tasks-app-nextjs/actions/workflows/test.yml/badge.svg)](https://github.com/macchiitaka/tasks-app-nextjs/actions/workflows/test.yml)
-[![CodeQL](https://github.com/macchiitaka/tasks-app-nextjs/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/macchiitaka/tasks-app-nextjs/actions/workflows/codeql-analysis.yml)
+[![Contiinuous Integration](https://github.com/macchiitaka/tasks-app-nextjs-vanilla-extract/actions/workflows/test.yml/badge.svg)](https://github.com/macchiitaka/tasks-app-nextjs-vanilla-extract/actions/workflows/test.yml)
+[![CodeQL](https://github.com/macchiitaka/tasks-app-nextjs-vanilla-extract/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/macchiitaka/tasks-app-nextjs-vanilla-extract/actions/workflows/codeql-analysis.yml)
 
-[Tasks] Web app using Next.js + TypeScript + React Query + styled-components.
-[Demo](https://tasks-app-nextjs.vercel.app/)
+[Tasks] Web app using Next.js + TypeScript + React Query + vanilla-extract.
+[Demo](https://tasks-app-nextjs-vanilla-extract.pages.dev/)
 
 ## Technologies
 
@@ -14,7 +14,7 @@
   - [Next.js by Vercel - The React Framework](https://nextjs.org/)
   - [React – A JavaScript library for building user interfaces](https://reactjs.org/)
 - CSS
-  - [styled-components](https://styled-components.com/)
+  - [vanilla-extract — Zero-runtime Stylesheets-in-TypeScript.](https://vanilla-extract.style/)
 - API client
   - [React Query - Hooks for fetching, caching and updating asynchronous data in React](https://react-query.tanstack.com/)
   - [axios/axios: Promise based HTTP client for the browser and node.js](https://github.com/axios/axios)
@@ -29,7 +29,7 @@
 - Git
   - [Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/)
 - Paas
-  - [Dashboard – Vercel](https://vercel.com/dashboard)
+  - [Cloudflare Pages](https://pages.cloudflare.com/)
 - Others
   - [typicode/husky: Git hooks made easy 🐶 woof!](https://github.com/typicode/husky)
   - [okonet/lint-staged: 🚫💩 — Run linters on git staged files](https://github.com/okonet/lint-staged)
