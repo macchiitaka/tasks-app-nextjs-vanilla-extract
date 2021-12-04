@@ -5,6 +5,7 @@ const withVanillaExtract = createVanillaExtractPlugin();
  * @type {import('next').NextConfig}
  */
 const config = {
+  swcMinify: true,
   typescript: {
     ignoreDevErrors: true,
     ignoreBuildErrors: true,
