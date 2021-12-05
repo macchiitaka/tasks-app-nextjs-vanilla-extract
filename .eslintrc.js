@@ -6,9 +6,6 @@ module.exports = {
     'next/core-web-vitals',
     'plugin:react/jsx-runtime',
     'plugin:compat/recommended',
-    'plugin:jest-dom/recommended',
-    'plugin:testing-library/dom',
-    'plugin:testing-library/react',
   ],
   parserOptions: {
     project: './tsconfig.json',
