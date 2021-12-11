@@ -443,13 +443,13 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.0.tgz#7f698254aadf921e48dda8c0a6b304026b8a9323"
   integrity sha512-JLo+Y592QzIE+q7Dl2pMUtt4q8SKYI5jDrZxrozEQxnGVOyYE+GWK9eLkwTaeN9DDctlaRAQ3TBmzZ1qdLE30A==
 
-"@takamachi/eslint-config@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@takamachi/eslint-config/-/eslint-config-2.3.0.tgz#80cd7ab8699ea03eac8caa15aee5182eafa0bf64"
-  integrity sha512-KDsujh/V0+eTaVg/kqZxhTMOi/OLCUUrNEBh3CcrBe9uEUUIeZZ/HARiMRHdD3GvFoKfpzFKEmaLGpUGvPuXDA==
+"@takamachi/eslint-config@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@takamachi/eslint-config/-/eslint-config-2.3.1.tgz#aa61168126befc92c0f46b8e392b986d1698230f"
+  integrity sha512-NPY7+mCG5uJzTEBMLYHnDD7yeNBMYCbqODfxmlb7VxaZTvsdYpAD7fAdOnhR9Qnyd3x3A+K17TyRRzjIWTSImw==
   dependencies:
-    "@typescript-eslint/eslint-plugin" "^5.4.0"
-    "@typescript-eslint/parser" "^5.4.0"
+    "@typescript-eslint/eslint-plugin" "^5.6.0"
+    "@typescript-eslint/parser" "^5.6.0"
     eslint-config-prettier "^8.3.0"
     eslint-plugin-import "^2.25.3"
     eslint-plugin-jsx-a11y "^6.5.1"
@@ -560,7 +560,7 @@
     "@types/react" "*"
     csstype "^3.0.2"
 
-"@typescript-eslint/eslint-plugin@^5.4.0":
+"@typescript-eslint/eslint-plugin@^5.6.0":
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.6.0.tgz#efd8668b3d6627c46ce722c2afe813928fe120a0"
   integrity sha512-MIbeMy5qfLqtgs1hWd088k1hOuRsN9JrHUPwVVKCD99EOUqScd7SrwoZl4Gso05EAP9w1kvLWUVGJOVpRPkDPA==
@@ -586,7 +586,7 @@
     eslint-scope "^5.1.1"
     eslint-utils "^3.0.0"
 
-"@typescript-eslint/parser@^5.0.0", "@typescript-eslint/parser@^5.4.0":
+"@typescript-eslint/parser@^5.0.0", "@typescript-eslint/parser@^5.6.0":
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.6.0.tgz#11677324659641400d653253c03dcfbed468d199"
   integrity sha512-YVK49NgdUPQ8SpCZaOpiq1kLkYRPMv9U5gcMrywzI8brtwZjr/tG3sZpuHyODt76W/A0SufNjYt9ZOgrC4tLIQ==
