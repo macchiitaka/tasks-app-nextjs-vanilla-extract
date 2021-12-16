@@ -29,6 +29,3 @@
   - [Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/)
 - Paas
   - [Cloudflare Pages](https://pages.cloudflare.com/)
-- Others
-  - [typicode/husky: Git hooks made easy 🐶 woof!](https://github.com/typicode/husky)
-  - [okonet/lint-staged: 🚫💩 — Run linters on git staged files](https://github.com/okonet/lint-staged)
