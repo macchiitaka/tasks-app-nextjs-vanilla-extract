@@ -651,12 +651,13 @@
     lodash "^4.17.21"
     outdent "^0.8.0"
 
-"@vanilla-extract/next-plugin@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/next-plugin/-/next-plugin-1.0.1.tgz#8a718eff3dbe00e889da11bcb1b5bc341c76e7ec"
-  integrity sha512-e0PIc75Tb5DCdSRZXd7Ph0eAv8VadPrh6NfCzP+S8lLEqeOFrNDVOOjKErlj1ngGNk3R+W/BcMDwJ8SKk+GQig==
+"@vanilla-extract/next-plugin@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/next-plugin/-/next-plugin-2.0.0.tgz#86170c53270fb9f862ebe1a5b949c3e06b246512"
+  integrity sha512-N4FD/ZZ2F4SYctp9VUn2ktvPdP0BrasdB1BMZ5cJpjw73SR/wbfyaaj0P19OgYPN0XeK8JetZ6apoldY5m7ZbA==
   dependencies:
     "@vanilla-extract/webpack-plugin" "^2.0.0"
+    browserslist "^4.19.1"
 
 "@vanilla-extract/private@^1.0.3":
   version "1.0.3"
@@ -983,7 +984,7 @@ browserslist@4.16.6:
     escalade "^3.1.1"
     node-releases "^1.1.71"
 
-browserslist@^4.16.8, browserslist@^4.17.5:
+browserslist@^4.16.8, browserslist@^4.17.5, browserslist@^4.19.1:
   version "4.19.1"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.19.1.tgz#4ac0435b35ab655896c31d53018b6dd5e9e4c9a3"
   integrity sha512-u2tbbG5PdKRTUoctO3NBD8FQ5HdPh1ZXPHzp1rwaa5jTc+RV9/+RlWiAIKmjRPQF+xbGM9Kklj5bZQFa2s/38A==
