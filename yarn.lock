@@ -1375,22 +1375,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:4.16.6":
-  version: 4.16.6
-  resolution: "browserslist@npm:4.16.6"
-  dependencies:
-    caniuse-lite: ^1.0.30001219
-    colorette: ^1.2.2
-    electron-to-chromium: ^1.3.723
-    escalade: ^3.1.1
-    node-releases: ^1.1.71
-  bin:
-    browserslist: cli.js
-  checksum: 3dffc86892d2dcfcfc66b52519b7e5698ae070b4fc92ab047e760efc4cae0474e9e70bbe10d769c8d3491b655ef3a2a885b88e7196c83cc5dc0a46dfdba8b70c
-  languageName: node
-  linkType: hard
-
-"browserslist@npm:^4.16.8, browserslist@npm:^4.17.5, browserslist@npm:^4.19.1":
+"browserslist@npm:4.19.1":
   version: 4.19.1
   resolution: "browserslist@npm:4.19.1"
   dependencies:
@@ -1486,7 +1471,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001202, caniuse-lite@npm:^1.0.30001219, caniuse-lite@npm:^1.0.30001228, caniuse-lite@npm:^1.0.30001267, caniuse-lite@npm:^1.0.30001286":
+"caniuse-lite@npm:1.0.30001294":
   version: 1.0.30001294
   resolution: "caniuse-lite@npm:1.0.30001294"
   checksum: 4e22649ef83781afbe6c81d6112ceac23c3ba29f91597ca1c14d323d5bfb646571edeb17436e76a29b07c8e9d75468655a2098a3e13dcc1438db47ff46fbb3ad
@@ -2016,7 +2001,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-to-chromium@npm:^1.3.723, electron-to-chromium@npm:^1.4.17":
+"electron-to-chromium@npm:^1.4.17":
   version: 1.4.30
   resolution: "electron-to-chromium@npm:1.4.30"
   checksum: ae786f52ee2530648e68264a6a771b6ca60d3c2b192f19e799be9aa5df0f9819d6a183f771497f37fb03df28846b968aab79252c79ca1f397ca030ccf7733c9f
@@ -4174,13 +4159,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-releases@npm:^1.1.71":
-  version: 1.1.77
-  resolution: "node-releases@npm:1.1.77"
-  checksum: eb2fcb45310e7d77f82bfdadeca546a698d258e011f15d88ad9a452a5e838a672ec532906581096ca19c66284a788330c3b09227ffc540e67228730f41b9c2e2
-  languageName: node
-  linkType: hard
-
 "node-releases@npm:^2.0.1":
   version: 2.0.1
   resolution: "node-releases@npm:2.0.1"
@@ -5615,6 +5593,8 @@ __metadata:
     "@vanilla-extract/next-plugin": ^2.0.1
     "@vanilla-extract/sprinkles": ^1.3.3
     axios: 0.24.0
+    browserslist: 4.19.1
+    caniuse-lite: ^1.0.30001294
     eslint: ^8.5.0
     eslint-config-next: 12.0.7
     eslint-plugin-compat: 4.0.0
