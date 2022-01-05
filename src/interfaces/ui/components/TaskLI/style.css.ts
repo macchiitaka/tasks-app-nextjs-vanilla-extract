@@ -4,14 +4,10 @@ import { sprinkles } from '../../style/sprinkles.css';
 import { vars } from '../../style/theme.css';
 import { ul } from '../TaskUList/style.css';
 
-const AREA_INPUT = 'input';
-const AREA_LABEL = 'label';
-const AREA_DELETE = 'delete';
-
 export const li = style({
-  display: 'grid',
-  gridTemplate: `'${AREA_INPUT} . ${AREA_LABEL} . ${AREA_DELETE}' ${vars.spacing[8]} / max-content ${vars.spacing[2]} 1fr ${vars.spacing[2]} max-content`,
+  display: 'flex',
   alignItems: 'center',
+  gap: vars.spacing[2],
   width: '100%',
   selectors: {
     // @todo 依存を逆転
@@ -21,12 +17,10 @@ export const li = style({
   },
 });
 
-export const input = style({
-  gridArea: AREA_INPUT,
-});
+export const input = style({});
 
 const labelBase = style({
-  gridArea: AREA_LABEL,
+  flexGrow: 1,
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   whiteSpace: 'nowrap',
@@ -57,6 +51,5 @@ export const label = styleVariants({
 });
 
 export const button = style({
-  gridArea: AREA_DELETE,
   height: vars.spacing[8],
 });
