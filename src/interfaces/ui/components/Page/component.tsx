@@ -1,5 +1,5 @@
 import { NewTaskForm } from '../NewTaskForm';
-import { TaskUList } from '../TaskUList';
+import { TaskList } from '../TaskList';
 import * as classes from './style.css';
 
 type ContainerProps = {};
@@ -11,7 +11,7 @@ export const View: React.VFC<Props> = () => (
     <h1 className={classes.h1}>Tasks</h1>
     <NewTaskForm />
     <div className={classes.ulWrapper}>
-      <TaskUList />
+      <TaskList />
     </div>
   </main>
 );

@@ -5,6 +5,7 @@ export const vars = createGlobalTheme(':root', {
     white: 'rgba(255, 255, 255, 1)',
     white70: 'rgba(255, 255, 255, 0.7)',
     black: 'rgba(0, 0, 0, 1)',
+    black5: 'rgba(0, 0, 0, 0.05)',
     black70: 'rgba(0, 0, 0, 0.7)',
   },
   fontFamily:

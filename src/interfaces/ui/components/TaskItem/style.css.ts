@@ -1,8 +1,9 @@
 import { style, styleVariants } from '@vanilla-extract/css';
 
+import { buttonBase } from '../../style/button.css';
 import { sprinkles } from '../../style/sprinkles.css';
 import { vars } from '../../style/theme.css';
-import { ul } from '../TaskUList/style.css';
+import { ul } from '../TaskList/style.css';
 
 export const li = style({
   display: 'flex',
@@ -17,10 +18,12 @@ export const li = style({
   },
 });
 
-export const input = style({});
+export const input = style({
+  accentColor: 'black',
+});
 
 const labelBase = style({
-  flexGrow: 1,
+  flex: 'auto 1 1',
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   whiteSpace: 'nowrap',
@@ -50,6 +53,4 @@ export const label = styleVariants({
   ],
 });
 
-export const button = style({
-  height: vars.spacing[8],
-});
+export const button = style([buttonBase, { height: vars.spacing[8] }]);

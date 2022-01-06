@@ -1,5 +1,6 @@
 import { style } from '@vanilla-extract/css';
 
+import { buttonBase } from '../../style/button.css';
 import { vars } from '../../style/theme.css';
 
 export const form = style({
@@ -9,12 +10,12 @@ export const form = style({
   width: '100%',
 });
 
-const base = {
+const height = {
   height: vars.spacing[8],
 };
 
 export const input = style([
-  base,
+  height,
   {
     boxSizing: 'border-box',
     padding: `0 ${vars.spacing[2]}`,
@@ -22,4 +23,4 @@ export const input = style([
   },
 ]);
 
-export const button = style([base, { gridArea: 'submit' }]);
+export const button = style([buttonBase, height, { gridArea: 'submit' }]);
