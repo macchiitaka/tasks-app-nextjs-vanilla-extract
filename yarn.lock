@@ -1474,10 +1474,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001297":
-  version: 1.0.30001297
-  resolution: "caniuse-lite@npm:1.0.30001297"
-  checksum: 4f0d298cf32c050aa1d8a7bb33ef6ff5f289e6dd6dad48b364bc2db91e03b5f0089ffa9950d6228dbd43446695cecd1990601b432a8d03c1d5b2e945cb67bade
+"caniuse-lite@npm:^1.0.30001298":
+  version: 1.0.30001298
+  resolution: "caniuse-lite@npm:1.0.30001298"
+  checksum: 43566732d1b8746e3dfae57f558471c701b26b2c166fb9fc53ad750d83128b2eb680a5e08233717e64055779b408c72d3b2cfad6d4ae33a3e647a11dc1c0d515
   languageName: node
   linkType: hard
 
@@ -5564,7 +5564,7 @@ __metadata:
     "@vanilla-extract/sprinkles": ^1.3.3
     axios: 0.24.0
     browserslist: 4.19.1
-    caniuse-lite: ^1.0.30001297
+    caniuse-lite: ^1.0.30001298
     eslint: ^8.6.0
     eslint-config-next: 12.0.7
     eslint-plugin-compat: 4.0.1
