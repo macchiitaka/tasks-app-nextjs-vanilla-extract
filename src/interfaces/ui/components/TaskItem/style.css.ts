@@ -18,7 +18,14 @@ export const li = style({
 });
 
 export const input = style({
-  accentColor: 'black',
+  '@media': {
+    [LIGHT]: {
+      accentColor: vars.palette.black,
+    },
+    [DARK]: {
+      accentColor: vars.palette.white,
+    },
+  },
 });
 
 const labelBase = style({
