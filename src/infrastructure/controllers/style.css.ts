@@ -1,16 +1,16 @@
 import { style } from '@vanilla-extract/css';
 
-import { sprinkles } from '../../interfaces/ui/style/sprinkles.css';
+import { DARK, LIGHT, vars } from '../../interfaces/ui/style/theme.css';
 
-export const root = style([
-  sprinkles({
-    background: {
-      lightMode: 'white',
-      darkMode: 'black',
+export const root = style({
+  width: '100vw',
+  height: '100vh',
+  '@media': {
+    [LIGHT]: {
+      backgroundColor: vars.palette.white,
     },
-  }),
-  style({
-    width: '100vw',
-    height: '100vh',
-  }),
-]);
+    [DARK]: {
+      backgroundColor: vars.palette.black,
+    },
+  },
+});

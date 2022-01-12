@@ -3,6 +3,7 @@ import { createGlobalTheme } from '@vanilla-extract/css';
 export const vars = createGlobalTheme(':root', {
   palette: {
     white: 'rgba(255, 255, 255, 1)',
+    white20: 'rgba(255, 255, 255, 0.2)',
     white70: 'rgba(255, 255, 255, 0.7)',
     black: 'rgba(0, 0, 0, 1)',
     black5: 'rgba(0, 0, 0, 0.05)',
@@ -17,4 +18,8 @@ export const vars = createGlobalTheme(':root', {
     '4': '16px',
     '8': '32px',
   },
+  colorScheme: {},
 });
+
+export const LIGHT = '(prefers-color-scheme: light)';
+export const DARK = '(prefers-color-scheme: dark)';

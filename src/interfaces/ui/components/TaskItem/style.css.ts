@@ -1,8 +1,7 @@
 import { style, styleVariants } from '@vanilla-extract/css';
 
 import { buttonBase } from '../../style/button.css';
-import { sprinkles } from '../../style/sprinkles.css';
-import { vars } from '../../style/theme.css';
+import { DARK, LIGHT, vars } from '../../style/theme.css';
 import { ul } from '../TaskList/style.css';
 
 export const li = style({
@@ -34,22 +33,28 @@ export const label = styleVariants({
     labelBase,
     {
       textDecoration: 'line-through',
-    },
-    sprinkles({
-      color: {
-        lightMode: 'black70',
-        darkMode: 'white70',
+      '@media': {
+        [LIGHT]: {
+          color: vars.palette.black70,
+        },
+        [DARK]: {
+          color: vars.palette.white70,
+        },
       },
-    }),
+    },
   ],
   'done.false': [
     labelBase,
-    sprinkles({
-      color: {
-        lightMode: 'black',
-        darkMode: 'white',
+    {
+      '@media': {
+        [LIGHT]: {
+          color: vars.palette.black,
+        },
+        [DARK]: {
+          color: vars.palette.white,
+        },
       },
-    }),
+    },
   ],
 });
 
