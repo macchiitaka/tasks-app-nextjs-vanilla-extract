@@ -1,4 +1,4 @@
 {
   "extends": ["github>macchiitaka/renovate-config", ":assignee(macchiitaka)"],
-   "rangeStrategy": "auto"
+  "rangeStrategy": "auto"
 }
