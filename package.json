@@ -40,7 +40,7 @@
     "@takamachi/eslint-config": "2.5.2",
     "@takamachi/prettier-config": "1.1.0",
     "@types/eslint": "8.4.1",
-    "@types/prettier": "2.4.3",
+    "@types/prettier": "2.4.4",
     "@types/react": "17.0.39",
     "@types/react-dom": "17.0.11",
     "@types/react-is": "17.0.3",
