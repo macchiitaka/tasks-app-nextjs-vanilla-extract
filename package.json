@@ -20,7 +20,7 @@
   },
   "resolutions": {
     "browserslist": "4.19.1",
-    "caniuse-lite": "1.0.30001311"
+    "caniuse-lite": "1.0.30001312"
   },
   "dependencies": {
     "@vanilla-extract/babel-plugin": "1.1.4",
@@ -43,7 +43,7 @@
     "@types/react-dom": "17.0.11",
     "@types/react-is": "17.0.3",
     "browserslist": "4.19.1",
-    "caniuse-lite": "1.0.30001311",
+    "caniuse-lite": "1.0.30001312",
     "eslint": "8.9.0",
     "eslint-config-next": "12.0.10",
     "eslint-plugin-compat": "4.0.2",
