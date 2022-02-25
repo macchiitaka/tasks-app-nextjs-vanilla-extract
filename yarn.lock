@@ -3629,16 +3629,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pathpida@npm:0.17.0":
-  version: 0.17.0
-  resolution: "pathpida@npm:0.17.0"
+"pathpida@npm:0.18.0":
+  version: 0.18.0
+  resolution: "pathpida@npm:0.18.0"
   dependencies:
     chokidar: ^3.5.2
     ignore: ^5.1.8
     minimist: ^1.2.5
   bin:
     pathpida: bin/index.js
-  checksum: ab81a265088377d13ff9c76eadde2ddf76663d7d4199dbf1740c1ee0089c5be9e5df1a937dacb2d425dd63ac519d0b6e2197235bb38186ff622f30ab4d764908
+  checksum: 89ba45f37fb715e2fbd30b3cc918e70e2533412399d504edf46737264943a2a5ee5908a8d14c79957db1021f6fe6b6167df528ee47cc5a60417d96ee0a703c39
   languageName: node
   linkType: hard
 
@@ -4414,7 +4414,7 @@ __metadata:
     eslint-plugin-compat: 4.0.2
     next: 12.1.0
     npm-run-all: 4.1.5
-    pathpida: 0.17.0
+    pathpida: 0.18.0
     prettier: 2.5.1
     react: 17.0.2
     react-dom: 17.0.2
