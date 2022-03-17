@@ -58,6 +58,11 @@
     "node": ">=12.18.x",
     "yarn": ">=1"
   },
+  "nextBundleAnalysis": {
+    "budget": 358400,
+    "budgetPercentIncreaseRed": 20,
+    "showDetails": true
+  },
   "packageManager": "yarn@3.2.0",
   "volta": {
     "node": "17.0.0",
