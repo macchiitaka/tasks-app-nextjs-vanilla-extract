@@ -763,14 +763,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/babel-plugin@npm:1.1.4":
-  version: 1.1.4
-  resolution: "@vanilla-extract/babel-plugin@npm:1.1.4"
+"@vanilla-extract/babel-plugin@npm:1.1.5":
+  version: 1.1.5
+  resolution: "@vanilla-extract/babel-plugin@npm:1.1.5"
   dependencies:
     "@babel/core": ^7.13.10
     "@babel/template": ^7.12.13
-    "@vanilla-extract/integration": ^2.0.1
-  checksum: ef439d07150197853c18b08f00f910299bddfe36cfc473aa212c9f460d4236b972bfce16868c3bb79417dbb24cf341f3007e30424dcb1cca5ae2b1cc541e8022
+    "@vanilla-extract/integration": ^3.0.0
+  checksum: 720779aab2adfd671f2c3c08dd09eedd091ddc8daa755d6ed455620342043b20b7aecc11d5581c8ad749389b0273758b92f6f5c2f52f5bbdc9656b598c7b1640
   languageName: node
   linkType: hard
 
@@ -805,6 +805,21 @@ __metadata:
     lodash: ^4.17.21
     outdent: ^0.8.0
   checksum: f7b49435716083a1fb0b2b6ecb0316c989dbe5292f61c381f81dbcb3cf388fb1475501e53f0f4e352b18ae296a2d2f7541776bdf586c9c34844b714ad2dd56c8
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/integration@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@vanilla-extract/integration@npm:3.0.0"
+  dependencies:
+    "@vanilla-extract/css": ^1.6.8
+    esbuild: ^0.11.16
+    eval: ^0.1.6
+    find-up: ^5.0.0
+    javascript-stringify: ^2.0.1
+    lodash: ^4.17.21
+    outdent: ^0.8.0
+  checksum: 08798fcb8592d0e3ba929375ae60f9d0181eba6ad22fe86ff01dab0c57e259d62f89b98c8e8468c87069a56c47c0c1a9f8b64914cab22676dfe51bde2db0b2fe
   languageName: node
   linkType: hard
 
@@ -4396,7 +4411,7 @@ __metadata:
     "@types/react": 17.0.40
     "@types/react-dom": 17.0.13
     "@types/react-is": 17.0.3
-    "@vanilla-extract/babel-plugin": 1.1.4
+    "@vanilla-extract/babel-plugin": 1.1.5
     "@vanilla-extract/css": 1.6.8
     "@vanilla-extract/next-plugin": 2.0.1
     axios: 0.26.1
