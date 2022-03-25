@@ -44,7 +44,7 @@
     "@types/react-is": "17.0.3",
     "browserslist": "4.20.2",
     "caniuse-lite": "1.0.30001320",
-    "eslint": "8.11.0",
+    "eslint": "8.12.0",
     "eslint-config-next": "12.1.0",
     "eslint-plugin-compat": "4.0.2",
     "npm-run-all": "4.1.5",
