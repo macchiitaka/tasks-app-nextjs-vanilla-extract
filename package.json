@@ -39,7 +39,7 @@
     "@takamachi/prettier-config": "1.1.0",
     "@types/eslint": "8.4.1",
     "@types/prettier": "2.4.4",
-    "@types/react": "17.0.42",
+    "@types/react": "17.0.43",
     "@types/react-dom": "17.0.14",
     "@types/react-is": "17.0.3",
     "browserslist": "4.20.2",
