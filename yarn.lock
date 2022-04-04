@@ -1254,10 +1254,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:1.0.30001324":
-  version: 1.0.30001324
-  resolution: "caniuse-lite@npm:1.0.30001324"
-  checksum: c48bc69d6a0f07f5907465481f313f35c55a6ebf066df233a91c8929a52cfaac380ffad63241ee1cd79a0c001e2af7644a759c10c1470a9c46d194913c81c5c3
+"caniuse-lite@npm:1.0.30001325":
+  version: 1.0.30001325
+  resolution: "caniuse-lite@npm:1.0.30001325"
+  checksum: 383a86a513381e3927a30b578ac8616ce388af79dc5dced22e18fffaef17c0bed0e324eadba1b13a6c15b3ec39128fbcfbb097992d3aca206feef5a539c4639f
   languageName: node
   linkType: hard
 
@@ -4533,7 +4533,7 @@ __metadata:
     "@vanilla-extract/next-plugin": 2.0.2
     axios: 0.26.1
     browserslist: 4.20.2
-    caniuse-lite: 1.0.30001324
+    caniuse-lite: 1.0.30001325
     eslint: 8.12.0
     eslint-config-next: 12.1.4
     eslint-plugin-compat: 4.0.2
