@@ -35,7 +35,6 @@ export const Provider: FC<
   );
 
   return (
-    // @ts-expect-error
     <QueryClientProvider client={queryClient}>
       {process.env.NODE_ENV !== 'production' && (
         <ReactQueryDevtools initialIsOpen={false} />
