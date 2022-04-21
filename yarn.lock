@@ -3907,9 +3907,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-query@npm:3.35.0":
-  version: 3.35.0
-  resolution: "react-query@npm:3.35.0"
+"react-query@npm:3.37.0":
+  version: 3.37.0
+  resolution: "react-query@npm:3.37.0"
   dependencies:
     "@babel/runtime": ^7.5.5
     broadcast-channel: ^3.4.1
@@ -3921,7 +3921,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 07f5986a85c78274f25d5f725eb11b7abe9248d771b5c72397cd9fbc183acafbb5d1db5d426e833aeb28aeb42934035370e7b1cdc52c185733ea3035dced40a5
+  checksum: 0dc78540518a4f902a97c7f73596903e58ffd7396c358f79b887c3531ca571b6f57443a1fa28854d1056b593c6db57038e9a151d5ea47c201a1f319378bd10e6
   languageName: node
   linkType: hard
 
@@ -4549,7 +4549,7 @@ __metadata:
     react: 18.0.0
     react-dom: 18.0.0
     react-is: 18.0.0
-    react-query: 3.35.0
+    react-query: 3.37.0
     sort-package-json: 1.55.0
     typescript: 4.6.3
     utility-types: 3.10.0
