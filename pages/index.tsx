@@ -1,1 +1,4 @@
-export { Index as default } from '../src/infrastructure/controllers';
+import { Top } from '../src/ui/pages/Top/Top';
+import { withAuth } from '../src/ui/pages/withAuth';
+
+export default withAuth(Top);

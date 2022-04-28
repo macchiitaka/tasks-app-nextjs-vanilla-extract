@@ -1,5 +1,9 @@
-const { createVanillaExtractPlugin } = require('@vanilla-extract/next-plugin');
-const withVanillaExtract = createVanillaExtractPlugin();
+const withVanillaExtract =
+  require('@vanilla-extract/next-plugin').createVanillaExtractPlugin();
+
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
 
 /**
  * @type {import('next').NextConfig}
@@ -14,4 +18,4 @@ const config = {
   poweredByHeader: false,
 };
 
-module.exports = withVanillaExtract(config);
+module.exports = withBundleAnalyzer(withVanillaExtract(config));

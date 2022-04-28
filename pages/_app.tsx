@@ -1,3 +1,3 @@
-import '../src/interfaces/ui/style/normalize.css';
+import '../src/ui/style/normalize.css';
 
-export { MyApp as default } from '../src/infrastructure/controllers/_app';
+export { MyApp as default } from '../src/ui/pages/_app';
