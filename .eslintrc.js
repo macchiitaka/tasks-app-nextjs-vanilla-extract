@@ -11,5 +11,6 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/no-invalid-this': 'off',
+    'unicorn/filename-case': 'off',
   },
 };
