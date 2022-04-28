@@ -949,21 +949,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.0.4":
+"acorn@npm:^8.0.4, acorn@npm:^8.7.0":
   version: 8.7.1
   resolution: "acorn@npm:8.7.1"
   bin:
     acorn: bin/acorn
   checksum: aca0aabf98826717920ac2583fdcad0a6fbe4e583fdb6e843af2594e907455aeafe30b1e14f1757cd83ce1776773cf8296ffc3a4acf13f0bd3dfebcf1db6ae80
-  languageName: node
-  linkType: hard
-
-"acorn@npm:^8.7.0":
-  version: 8.7.0
-  resolution: "acorn@npm:8.7.0"
-  bin:
-    acorn: bin/acorn
-  checksum: e0f79409d68923fbf1aa6d4166f3eedc47955320d25c89a20cc822e6ba7c48c5963d5bc657bc242d68f7a4ac9faf96eef033e8f73656da6c640d4219935fdfd0
   languageName: node
   linkType: hard
 
@@ -1150,13 +1141,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:0.27.1":
-  version: 0.27.1
-  resolution: "axios@npm:0.27.1"
+"axios@npm:0.27.2":
+  version: 0.27.2
+  resolution: "axios@npm:0.27.2"
   dependencies:
     follow-redirects: ^1.14.9
     form-data: ^4.0.0
-  checksum: 0da3131125429fcaeb5057c9b7249699c59d48a053d8aaa897089c96e5fa623cf2cf9c3ae36c307235dab495ab7409c87ffbd9b77407624a21403571a492c771
+  checksum: 38cb7540465fe8c4102850c4368053c21683af85c5fdf0ea619f9628abbcb59415d1e22ebc8a6390d2bbc9b58a9806c874f139767389c862ec9b772235f06854
   languageName: node
   linkType: hard
 
@@ -4679,7 +4670,7 @@ __metadata:
     "@vanilla-extract/babel-plugin": 1.1.5
     "@vanilla-extract/css": 1.7.0
     "@vanilla-extract/next-plugin": 2.0.2
-    axios: 0.27.1
+    axios: 0.27.2
     browserslist: 4.20.3
     caniuse-lite: 1.0.30001332
     constate: ^3.3.2
