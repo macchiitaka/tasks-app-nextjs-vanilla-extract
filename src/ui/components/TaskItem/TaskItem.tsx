@@ -44,3 +44,5 @@ export const TaskItem: React.FC<TaskModel> = ({ done, id, title }) => {
     </li>
   );
 };
+
+export default TaskItem;

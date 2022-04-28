@@ -23,7 +23,7 @@ export const useNewTaskMutation = () => {
       ]);
     },
     onSettled: async () => {
-      queryClient.invalidateQueries(taskKeys.list());
+      queryClient.invalidateQueries(taskKeys.all());
     },
     retry: 5,
   });

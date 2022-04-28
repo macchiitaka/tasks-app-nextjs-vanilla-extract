@@ -11,7 +11,6 @@ export const useTaskMutation = (id: number) => {
   return useMutation(taskKeys.detail(id), taskRepository.updateTask, {
     onMutate: async ({ done }) => {
       await queryClient.cancelQueries(taskKeys.list());
-
       queryClient.setQueryData<TaskModel[]>(
         taskKeys.list(),
         (tasks) =>
@@ -26,7 +25,7 @@ export const useTaskMutation = (id: number) => {
       );
     },
     onSettled: async (result) => {
-      queryClient.invalidateQueries(taskKeys.list());
+      queryClient.invalidateQueries(taskKeys.all());
     },
     retry: 5,
   });

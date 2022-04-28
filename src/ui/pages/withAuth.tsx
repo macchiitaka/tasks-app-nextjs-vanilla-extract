@@ -1,20 +1,24 @@
 import type { FC } from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+
+import { useSetToken, useToken } from '../../state/token';
+import { Loader } from './Loading/Loader';
 
 export const withAuth = (Component: React.FC) => {
   const Authentication: FC = () => {
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const token = useToken();
+    const setToken = useSetToken();
 
     useEffect(() => {
       const id = setTimeout(() => {
-        setIsAuthenticated(true);
-      }, 500);
+        setToken('__TOKEN__');
+      }, 300);
       return () => {
         clearTimeout(id);
       };
-    }, []);
+    }, [setToken]);
 
-    return isAuthenticated ? <Component /> : <div>Loading...</div>;
+    return token ? <Component /> : <Loader />;
   };
   return Authentication;
 };

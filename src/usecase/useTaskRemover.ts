@@ -11,14 +11,13 @@ export const useTaskRemover = (id: number) => {
   return useMutation(taskKeys.detail(id), taskRepository.deleteTask, {
     onMutate: async () => {
       await queryClient.cancelQueries(taskKeys.list());
-
       queryClient.setQueryData<TaskModel[]>(
         taskKeys.list(),
         (tasks) => tasks?.filter((task) => task.id !== id) ?? [],
       );
     },
     onSettled: async () => {
-      queryClient.invalidateQueries(taskKeys.list());
+      queryClient.invalidateQueries(taskKeys.all());
     },
     retry: 5,
   });
