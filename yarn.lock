@@ -349,7 +349,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/bundle-analyzer@npm:^12.1.5":
+"@next/bundle-analyzer@npm:12.1.5":
   version: 12.1.5
   resolution: "@next/bundle-analyzer@npm:12.1.5"
   dependencies:
@@ -1434,7 +1434,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"constate@npm:^3.3.2":
+"constate@npm:3.3.2":
   version: 3.3.2
   resolution: "constate@npm:3.3.2"
   peerDependencies:
@@ -4658,7 +4658,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tasks-app-nextjs@workspace:."
   dependencies:
-    "@next/bundle-analyzer": ^12.1.5
+    "@next/bundle-analyzer": 12.1.5
     "@next/eslint-plugin-next": 12.1.5
     "@takamachi/eslint-config": 2.6.9
     "@takamachi/prettier-config": 1.1.0
@@ -4673,7 +4673,7 @@ __metadata:
     axios: 0.27.2
     browserslist: 4.20.3
     caniuse-lite: 1.0.30001332
-    constate: ^3.3.2
+    constate: 3.3.2
     eslint: 8.14.0
     eslint-config-next: 12.1.5
     eslint-plugin-compat: 4.0.2
