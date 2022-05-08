@@ -1,3 +1,4 @@
+import { DevTool } from '@hookform/devtools';
 import { ErrorMessage } from '@hookform/error-message';
 import { useForm } from 'react-hook-form';
 
@@ -10,6 +11,7 @@ export const NewTaskForm: React.FC = () => {
     handleSubmit,
     formState: { errors },
     reset,
+    control,
   } = useForm({
     defaultValues: { title: '' },
   });
@@ -31,6 +33,7 @@ export const NewTaskForm: React.FC = () => {
           autoFocus
           placeholder="Add task"
           aria-label="New task"
+          aria-invalid={!!errors.title}
         />
         <button
           className={classes.button}
@@ -41,6 +44,8 @@ export const NewTaskForm: React.FC = () => {
         </button>
       </form>
       <ErrorMessage errors={errors} name="title" />
+
+      {process.env.NODE_ENV !== 'production' && <DevTool control={control} />}
     </>
   );
 };
