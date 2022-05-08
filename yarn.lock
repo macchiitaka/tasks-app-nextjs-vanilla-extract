@@ -232,16 +232,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.6.2, @babel/runtime@npm:^7.7.2":
-  version: 7.17.8
-  resolution: "@babel/runtime@npm:7.17.8"
-  dependencies:
-    regenerator-runtime: ^0.13.4
-  checksum: 68d195c1630bb91ac20e86635d292a17ebab7f361cfe79406b3f5a6cc2e59fa283ae5006568899abf869312c2b35b744bd407aea8ffdb650f1a68d07785d47e9
-  languageName: node
-  linkType: hard
-
-"@babel/runtime@npm:^7.13.10":
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.6.2, @babel/runtime@npm:^7.7.2":
   version: 7.17.9
   resolution: "@babel/runtime@npm:7.17.9"
   dependencies:
@@ -457,7 +448,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hookform/devtools@npm:^4.1.0":
+"@hookform/devtools@npm:4.1.0":
   version: 4.1.0
   resolution: "@hookform/devtools@npm:4.1.0"
   dependencies:
@@ -475,7 +466,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hookform/error-message@npm:^2.0.0":
+"@hookform/error-message@npm:2.0.0":
   version: 2.0.0
   resolution: "@hookform/error-message@npm:2.0.0"
   peerDependencies:
@@ -4212,7 +4203,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-hook-form@npm:^7.30.0":
+"react-hook-form@npm:7.30.0":
   version: 7.30.0
   resolution: "react-hook-form@npm:7.30.0"
   peerDependencies:
@@ -4881,8 +4872,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tasks-app-nextjs@workspace:."
   dependencies:
-    "@hookform/devtools": ^4.1.0
-    "@hookform/error-message": ^2.0.0
+    "@hookform/devtools": 4.1.0
+    "@hookform/error-message": 2.0.0
     "@next/bundle-analyzer": 12.1.6
     "@next/eslint-plugin-next": 12.1.6
     "@takamachi/eslint-config": 2.6.9
@@ -4908,7 +4899,7 @@ __metadata:
     prettier: 2.6.2
     react: 18.1.0
     react-dom: 18.1.0
-    react-hook-form: ^7.30.0
+    react-hook-form: 7.30.0
     react-is: 18.1.0
     react-query: 3.38.1
     sort-package-json: 1.57.0
