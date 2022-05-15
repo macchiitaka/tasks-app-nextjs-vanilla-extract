@@ -1,6 +1,6 @@
 import { useQuery } from 'react-query';
 
-import { useTaskRepository } from '../repositories/RepositoryProvider';
+import { useTaskRepository } from '../store/RepositoryProvider';
 import { taskKeys } from './queries/tasks';
 
 export const useTaskList = () => {
