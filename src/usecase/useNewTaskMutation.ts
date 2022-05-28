@@ -1,6 +1,6 @@
 import { useMutation, useQueryClient } from 'react-query';
 
-import type { TaskModel } from '../models/TaskModel';
+import type { Task } from '../domain/TaskDomain';
 import { useTaskRepository } from '../store/RepositoryProvider';
 import { taskKeys } from './queries/tasks';
 
@@ -8,10 +8,10 @@ export const useNewTaskMutation = () => {
   const taskRepository = useTaskRepository();
   const queryClient = useQueryClient();
 
-  return useMutation(taskRepository.createTask, {
+  return useMutation(taskRepository.createTask.bind(taskRepository), {
     onMutate: async ({ title }: { title: string }) => {
       await queryClient.cancelQueries(taskKeys.list());
-      queryClient.setQueryData<TaskModel[]>(taskKeys.list(), (old) => [
+      queryClient.setQueryData<Task[]>(taskKeys.list(), (old) => [
         {
           id: Math.random(),
           title,

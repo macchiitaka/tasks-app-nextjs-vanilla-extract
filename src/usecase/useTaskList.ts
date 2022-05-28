@@ -5,5 +5,5 @@ import { taskKeys } from './queries/tasks';
 
 export const useTaskList = () => {
   const taskRepository = useTaskRepository();
-  return useQuery(taskKeys.list(), taskRepository.getAllTasks);
+  return useQuery(taskKeys.list(), taskRepository.getTasks);
 };

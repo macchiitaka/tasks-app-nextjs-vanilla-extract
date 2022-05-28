@@ -1,6 +1,6 @@
 import { useMutation, useQueryClient } from 'react-query';
 
-import type { TaskModel } from '../models/TaskModel';
+import type { Task } from '../domain/TaskDomain';
 import { useTaskRepository } from '../store/RepositoryProvider';
 import { taskKeys } from './queries/tasks';
 
@@ -11,7 +11,7 @@ export const useTaskRemover = (id: number) => {
   return useMutation(taskKeys.detail(id), taskRepository.deleteTask, {
     onMutate: async () => {
       await queryClient.cancelQueries(taskKeys.list());
-      queryClient.setQueryData<TaskModel[]>(
+      queryClient.setQueryData<Task[]>(
         taskKeys.list(),
         (tasks) => tasks?.filter((task) => task.id !== id) ?? [],
       );

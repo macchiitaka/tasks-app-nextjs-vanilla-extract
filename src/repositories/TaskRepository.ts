@@ -1,8 +1,8 @@
 import type { AxiosInstance } from 'axios';
 
-import type { TaskModel } from '../models/TaskModel';
+import type { Task, TaskRepositoryInterface } from '../domain/TaskDomain';
 
-type TaskRecord = {
+type TaskAPIResponse = {
   id: number;
   created_at: string; // RFC3339
   updated_at: string; // RFC3339
@@ -10,42 +10,38 @@ type TaskRecord = {
   done: boolean;
 };
 
-const convertToModel = ({
+const createEntity = ({
   created_at,
   updated_at,
   ...rest
-}: TaskRecord): TaskModel => ({
+}: TaskAPIResponse): Task => ({
   ...rest,
   createdAt: created_at,
   updatedAt: updated_at,
 });
 
-export class TaskRepository {
+export class TaskRepository implements TaskRepositoryInterface {
   private readonly api: AxiosInstance;
 
   constructor(api: AxiosInstance) {
     this.api = api;
   }
 
-  public readonly getAllTasks = async (): Promise<TaskModel[]> =>
-    (await this.api.get<{ items: TaskRecord[] }>('/tasks')).data.items.map(
-      convertToModel,
+  public readonly getTasks = async () =>
+    (await this.api.get<{ items: TaskAPIResponse[] }>('/tasks')).data.items.map(
+      createEntity,
     );
 
-  public readonly createTask = async (data: {
-    title: string;
-  }): Promise<TaskModel> =>
-    convertToModel((await this.api.post<TaskRecord>('/tasks', data)).data);
+  public readonly createTask = async (data: { title: string }) =>
+    createEntity((await this.api.post<TaskAPIResponse>('/tasks', data)).data);
 
   public readonly updateTask = async ({
     id,
     ...data
-  }: {
-    id: number;
-    title: string;
-    done: boolean;
-  }): Promise<TaskModel> =>
-    convertToModel((await this.api.put<TaskRecord>(`/tasks/${id}`, data)).data);
+  }: Pick<Task, 'id' | 'title' | 'done'>) =>
+    createEntity(
+      (await this.api.put<TaskAPIResponse>(`/tasks/${id}`, data)).data,
+    );
 
   public readonly deleteTask = async (id: number): Promise<void> => {
     await this.api.delete<void>(`/tasks/${id}`);
