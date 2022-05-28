@@ -44,7 +44,7 @@
     "@takamachi/eslint-config": "2.7.0",
     "@takamachi/prettier-config": "1.1.0",
     "@types/eslint": "8.4.2",
-    "@types/prettier": "2.6.1",
+    "@types/prettier": "2.6.2",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.5",
     "@types/react-is": "17.0.3",
