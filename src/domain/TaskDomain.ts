@@ -7,7 +7,7 @@ export type Task = {
 };
 
 export interface TaskRepositoryInterface {
-  getTasks(): Promise<Task[]>;
+  getTaskList(): Promise<Task[]>;
   createTask(params: Pick<Task, 'title'>): Promise<Task>;
   updateTask(params: Pick<Task, 'id' | 'title' | 'done'>): Promise<Task>;
   deleteTask(id: Task['id']): Promise<void>;

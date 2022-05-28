@@ -1,8 +1,8 @@
 import { useMutation, useQueryClient } from 'react-query';
 
 import type { Task } from '../domain/TaskDomain';
+import { taskKeys } from '../store/queries/tasks';
 import { useTaskRepository } from '../store/RepositoryProvider';
-import { taskKeys } from './queries/tasks';
 
 export const useTaskMutation = (id: number) => {
   const taskRepository = useTaskRepository();

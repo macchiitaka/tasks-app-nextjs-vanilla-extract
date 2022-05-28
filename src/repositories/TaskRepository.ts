@@ -27,7 +27,7 @@ export class TaskRepository implements TaskRepositoryInterface {
     this.api = api;
   }
 
-  public readonly getTasks = async () =>
+  public readonly getTaskList = async () =>
     (await this.api.get<{ items: TaskAPIResponse[] }>('/tasks')).data.items.map(
       createEntity,
     );

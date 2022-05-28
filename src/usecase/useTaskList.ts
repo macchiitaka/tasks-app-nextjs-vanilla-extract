@@ -1,9 +1,9 @@
 import { useQuery } from 'react-query';
 
+import { taskKeys } from '../store/queries/tasks';
 import { useTaskRepository } from '../store/RepositoryProvider';
-import { taskKeys } from './queries/tasks';
 
 export const useTaskList = () => {
   const taskRepository = useTaskRepository();
-  return useQuery(taskKeys.list(), taskRepository.getTasks);
+  return useQuery(taskKeys.list(), taskRepository.getTaskList);
 };
