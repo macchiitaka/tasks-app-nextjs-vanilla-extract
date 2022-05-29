@@ -1,12 +1,12 @@
 import type { ChangeEvent } from 'react';
 import { useCallback } from 'react';
 
-import type { Task } from '../../../domain/TaskDomain';
+import type { ITask } from '../../../domain/TaskDomain';
 import { useTaskMutation } from '../../../usecase/useTaskMutation';
 import { useTaskRemover } from '../../../usecase/useTaskRemover';
 import * as classes from './TaskItem.css';
 
-export const TaskItem: React.FC<Task> = ({ done, id, title }) => {
+export const TaskItem: React.FC<ITask> = ({ done, id, title }) => {
   const { mutate: mutateTask } = useTaskMutation(id);
   const handleChangeDone = useCallback(
     (e: ChangeEvent<HTMLInputElement>) => {

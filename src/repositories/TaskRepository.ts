@@ -1,6 +1,6 @@
 import type { AxiosInstance } from 'axios';
 
-import type { Task, TaskRepositoryInterface } from '../domain/TaskDomain';
+import type { ITask, TaskRepositoryInterface } from '../domain/TaskDomain';
 
 type TaskAPIResponse = {
   id: number;
@@ -14,7 +14,7 @@ const createEntity = ({
   created_at,
   updated_at,
   ...rest
-}: TaskAPIResponse): Task => ({
+}: TaskAPIResponse): ITask => ({
   ...rest,
   createdAt: created_at,
   updatedAt: updated_at,
@@ -38,7 +38,7 @@ export class TaskRepository implements TaskRepositoryInterface {
   public readonly updateTask = async ({
     id,
     ...data
-  }: Pick<Task, 'id' | 'title' | 'done'>) =>
+  }: Pick<ITask, 'id' | 'title' | 'done'>) =>
     createEntity(
       (await this.api.put<TaskAPIResponse>(`/tasks/${id}`, data)).data,
     );

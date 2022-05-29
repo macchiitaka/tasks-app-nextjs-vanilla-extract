@@ -1,14 +1,14 @@
-export type Task = {
+export interface ITask {
   id: number;
   createdAt: string;
   updatedAt: string;
   title: string;
   done: boolean;
-};
+}
 
 export interface TaskRepositoryInterface {
-  getTaskList(): Promise<Task[]>;
-  createTask(params: Pick<Task, 'title'>): Promise<Task>;
-  updateTask(params: Pick<Task, 'id' | 'title' | 'done'>): Promise<Task>;
-  deleteTask(id: Task['id']): Promise<void>;
+  getTaskList(): Promise<ITask[]>;
+  createTask(params: Pick<ITask, 'title'>): Promise<ITask>;
+  updateTask(params: Pick<ITask, 'id' | 'title' | 'done'>): Promise<ITask>;
+  deleteTask(id: ITask['id']): Promise<void>;
 }
