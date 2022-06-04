@@ -1012,26 +1012,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:1.7.0":
-  version: 1.7.0
-  resolution: "@vanilla-extract/css@npm:1.7.0"
-  dependencies:
-    "@emotion/hash": ^0.8.0
-    "@vanilla-extract/private": ^1.0.3
-    chalk: ^4.1.1
-    css-mediaquery: ^0.1.2
-    css-what: ^5.0.1
-    cssesc: ^3.0.0
-    csstype: ^3.0.7
-    deep-object-diff: ^1.1.0
-    deepmerge: ^4.2.2
-    escape-string-regexp: ^4.0.0
-    outdent: ^0.8.0
-  checksum: 2ecebcc25febfb4d97360a36122886f073ef1ee5e064f2e8b81bc32515ffc759265f4b698fe96cfbfba201ccd050020d139ebb33a7290b82737556968494381a
-  languageName: node
-  linkType: hard
-
-"@vanilla-extract/css@npm:^1.6.8":
+"@vanilla-extract/css@npm:1.7.1, @vanilla-extract/css@npm:^1.6.8":
   version: 1.7.1
   resolution: "@vanilla-extract/css@npm:1.7.1"
   dependencies:
@@ -1694,13 +1675,6 @@ __metadata:
     shebang-command: ^2.0.0
     which: ^2.0.1
   checksum: 671cc7c7288c3a8406f3c69a3ae2fc85555c04169e9d611def9a675635472614f1c0ed0ef80955d5b6d4e724f6ced67f0ad1bb006c2ea643488fcfef994d7f52
-  languageName: node
-  linkType: hard
-
-"css-mediaquery@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "css-mediaquery@npm:0.1.2"
-  checksum: 8e26ae52d8aaaa71893f82fc485363ff0fab494b7d3b3464572aaed50714b8b538d33dbdaa69f0c02cf7f80d1f4d9a77519306c0492223ce91b3987475031a69
   languageName: node
   linkType: hard
 
@@ -4956,7 +4930,7 @@ __metadata:
     "@types/react-dom": 18.0.5
     "@types/react-is": 17.0.3
     "@vanilla-extract/babel-plugin": 1.1.6
-    "@vanilla-extract/css": 1.7.0
+    "@vanilla-extract/css": 1.7.1
     "@vanilla-extract/next-plugin": 2.0.2
     axios: 0.27.2
     browserslist: 4.20.3
