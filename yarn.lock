@@ -1396,18 +1396,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:4.20.3":
-  version: 4.20.3
-  resolution: "browserslist@npm:4.20.3"
+"browserslist@npm:4.20.4":
+  version: 4.20.4
+  resolution: "browserslist@npm:4.20.4"
   dependencies:
-    caniuse-lite: ^1.0.30001332
-    electron-to-chromium: ^1.4.118
+    caniuse-lite: ^1.0.30001349
+    electron-to-chromium: ^1.4.147
     escalade: ^3.1.1
-    node-releases: ^2.0.3
+    node-releases: ^2.0.5
     picocolors: ^1.0.0
   bin:
     browserslist: cli.js
-  checksum: 1e4b719ac2ca0fe235218a606e8b8ef16b8809e0973b924158c39fbc435a0b0fe43437ea52dd6ef5ad2efcb83fcb07431244e472270177814217f7c563651f7d
+  checksum: 0e56c42da765524e5c31bc9a1f08afaa8d5dba085071137cf21e56dc78d0cf0283764143df4c7d1c0cd18c3187fc9494e1d93fa0255004f0be493251a28635f9
   languageName: node
   linkType: hard
 
@@ -1845,10 +1845,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-to-chromium@npm:^1.4.118":
-  version: 1.4.142
-  resolution: "electron-to-chromium@npm:1.4.142"
-  checksum: 53c6105ef81923a4dba0a53fdd1a010a492ad051eb527969e981ce78aee5ebdc729e7b16733e6cfb7b934ad23b84172d0677abaa5d9cd0ae71cd4cf986e4ab2e
+"electron-to-chromium@npm:^1.4.147":
+  version: 1.4.151
+  resolution: "electron-to-chromium@npm:1.4.151"
+  checksum: 03be4f1f1f08da6962a2983ae7a092a61edc736010ed10e42c612ce3fa13d47e360313230ddc101bec71f5da5689546d7eee541ea5e1fe4082b09355b30311ec
   languageName: node
   linkType: hard
 
@@ -3747,7 +3747,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-releases@npm:^2.0.3":
+"node-releases@npm:^2.0.5":
   version: 2.0.5
   resolution: "node-releases@npm:2.0.5"
   checksum: e85d949addd19f8827f32569d2be5751e7812ccf6cc47879d49f79b5234ff4982225e39a3929315f96370823b070640fb04d79fc0ddec8b515a969a03493a42f
@@ -4933,7 +4933,7 @@ __metadata:
     "@vanilla-extract/css": 1.7.2
     "@vanilla-extract/next-plugin": 2.0.2
     axios: 0.27.2
-    browserslist: 4.20.3
+    browserslist: 4.20.4
     caniuse-lite: 1.0.30001352
     constate: 3.3.2
     eslint: 8.17.0
