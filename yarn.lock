@@ -1461,10 +1461,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:1.0.30001346":
-  version: 1.0.30001346
-  resolution: "caniuse-lite@npm:1.0.30001346"
-  checksum: 951590454ffa4e2e7b772558dc593cd08604b44c83741e1188166298f54c34387f4bf34f5141a35de4a43028c012484240ad15c896e48bf4eac70dd7076a4449
+"caniuse-lite@npm:1.0.30001352":
+  version: 1.0.30001352
+  resolution: "caniuse-lite@npm:1.0.30001352"
+  checksum: 575ad031349e56224471859decd100d0f90c804325bf1b543789b212d6126f6e18925766b325b1d96f75e48df0036e68f92af26d1fb175803fd6ad935bc807ac
   languageName: node
   linkType: hard
 
@@ -4934,7 +4934,7 @@ __metadata:
     "@vanilla-extract/next-plugin": 2.0.2
     axios: 0.27.2
     browserslist: 4.20.3
-    caniuse-lite: 1.0.30001346
+    caniuse-lite: 1.0.30001352
     constate: 3.3.2
     eslint: 8.17.0
     eslint-config-next: 12.1.6
