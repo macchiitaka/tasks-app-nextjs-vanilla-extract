@@ -720,25 +720,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@takamachi/eslint-config@npm:2.7.2":
-  version: 2.7.2
-  resolution: "@takamachi/eslint-config@npm:2.7.2"
+"@takamachi/eslint-config@npm:2.7.3":
+  version: 2.7.3
+  resolution: "@takamachi/eslint-config@npm:2.7.3"
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^5.27.1
-    "@typescript-eslint/parser": ^5.27.1
+    "@typescript-eslint/eslint-plugin": ^5.28.0
+    "@typescript-eslint/parser": ^5.28.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-import: ^2.26.0
     eslint-plugin-jsx-a11y: ^6.5.1
     eslint-plugin-node: ^11.1.0
     eslint-plugin-react: ^7.30.0
-    eslint-plugin-react-hooks: ^4.5.0
+    eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-simple-import-sort: ^7.0.0
     eslint-plugin-unicorn: ^42.0.0
     eslint-plugin-unused-imports: ^2.0.0
   peerDependencies:
     eslint: ^8.0.0
     typescript: ^3.3.3333 || ^4.0.0
-  checksum: 14d697893d6c206e6b59b3457973ee2742a583c868a0eed2b25725bdaa0964813c87eb65bb7c47463dbe3320be8c67998f00bd7edbef4cb6e9086bd1022f7dba
+  checksum: e8774179f22ca01fb5212d75613d220ae8d6e7af6520ebcc13cc68c7052258c19bb81dd5e317133a087e25d68deaa80a913e802bdfcb8fc8e7a42b2db33c8b6c
   languageName: node
   linkType: hard
 
@@ -884,7 +884,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.27.1":
+"@typescript-eslint/eslint-plugin@npm:^5.28.0":
   version: 5.28.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.28.0"
   dependencies:
@@ -907,7 +907,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.21.0, @typescript-eslint/parser@npm:^5.27.1":
+"@typescript-eslint/parser@npm:^5.21.0, @typescript-eslint/parser@npm:^5.28.0":
   version: 5.28.0
   resolution: "@typescript-eslint/parser@npm:5.28.0"
   dependencies:
@@ -4922,7 +4922,7 @@ __metadata:
     "@hookform/error-message": 2.0.0
     "@next/bundle-analyzer": 12.1.6
     "@next/eslint-plugin-next": 12.1.6
-    "@takamachi/eslint-config": 2.7.2
+    "@takamachi/eslint-config": 2.7.3
     "@takamachi/prettier-config": 1.1.0
     "@types/eslint": 8.4.3
     "@types/prettier": 2.6.3
