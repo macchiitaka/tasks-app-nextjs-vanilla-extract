@@ -4236,12 +4236,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-hook-form@npm:7.32.0":
-  version: 7.32.0
-  resolution: "react-hook-form@npm:7.32.0"
+"react-hook-form@npm:7.32.2":
+  version: 7.32.2
+  resolution: "react-hook-form@npm:7.32.2"
   peerDependencies:
     react: ^16.8.0 || ^17 || ^18
-  checksum: 2342ca3b3fd19772fc8167eab578e9c95eb44d73fa87e29e0d1228c6412cbf306ac014ba2ad60fdb5750ab32173193231052fa40a5684db65602d82a437ed10d
+  checksum: abe8ba146c313d206f99a01260457bc72af03b2c73d7bd4be5af11598140ec45ef1ef37bac64b80c4dbc298d6aa21af4caa259a133f305a04ddf583faa18e7d0
   languageName: node
   linkType: hard
 
@@ -4945,7 +4945,7 @@ __metadata:
     prettier: 2.7.1
     react: 18.2.0
     react-dom: 18.2.0
-    react-hook-form: 7.32.0
+    react-hook-form: 7.32.2
     react-is: 18.2.0
     react-query: 3.39.1
     sort-package-json: 1.57.0
