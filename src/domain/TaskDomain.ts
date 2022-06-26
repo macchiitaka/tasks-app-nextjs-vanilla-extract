@@ -1,4 +1,4 @@
-export interface ITask {
+export interface TaskInterface {
   id: number;
   createdAt: string;
   updatedAt: string;
@@ -7,8 +7,10 @@ export interface ITask {
 }
 
 export interface TaskRepositoryInterface {
-  getTaskList(): Promise<ITask[]>;
-  createTask(params: Pick<ITask, 'title'>): Promise<ITask>;
-  updateTask(params: Pick<ITask, 'id' | 'title' | 'done'>): Promise<ITask>;
-  deleteTask(id: ITask['id']): Promise<void>;
+  getTaskList(): Promise<TaskInterface[]>;
+  createTask(params: Pick<TaskInterface, 'title'>): Promise<TaskInterface>;
+  updateTask(
+    params: Pick<TaskInterface, 'id' | 'title' | 'done'>,
+  ): Promise<TaskInterface>;
+  deleteTask(id: TaskInterface['id']): Promise<void>;
 }

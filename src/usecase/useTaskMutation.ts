@@ -1,6 +1,6 @@
 import { useMutation, useQueryClient } from 'react-query';
 
-import type { ITask } from '../domain/TaskDomain';
+import type { TaskInterface } from '../domain/TaskDomain';
 import { taskKeys } from '../store/queries/tasks';
 import { useTaskRepository } from '../store/RepositoryProvider';
 
@@ -11,7 +11,7 @@ export const useTaskMutation = (id: number) => {
   return useMutation(taskKeys.detail(id), taskRepository.updateTask, {
     onMutate: async ({ done }) => {
       await queryClient.cancelQueries(taskKeys.list());
-      queryClient.setQueryData<ITask[]>(
+      queryClient.setQueryData<TaskInterface[]>(
         taskKeys.list(),
         (tasks) =>
           tasks?.map((task) =>
