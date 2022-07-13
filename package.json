@@ -39,7 +39,7 @@
     "react-query": "3.39.1"
   },
   "devDependencies": {
-    "@hookform/devtools": "4.1.1",
+    "@hookform/devtools": "4.2.1",
     "@next/eslint-plugin-next": "12.2.2",
     "@takamachi/eslint-config": "2.9.1",
     "@takamachi/prettier-config": "1.1.0",
