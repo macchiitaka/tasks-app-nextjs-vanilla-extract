@@ -437,9 +437,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hookform/devtools@npm:4.1.1":
-  version: 4.1.1
-  resolution: "@hookform/devtools@npm:4.1.1"
+"@hookform/devtools@npm:4.2.1":
+  version: 4.2.1
+  resolution: "@hookform/devtools@npm:4.2.1"
   dependencies:
     "@emotion/react": ^11.1.5
     "@emotion/styled": ^11.3.0
@@ -447,11 +447,12 @@ __metadata:
     little-state-machine: ^4.1.0
     lodash: ^4.17.21
     react-simple-animate: ^3.3.12
+    use-deep-compare-effect: ^1.8.1
+    uuid: ^8.3.2
   peerDependencies:
     react: ">=17.0.2"
     react-dom: ">=17.0.2"
-    react-hook-form: ^7.33.1
-  checksum: f959b4b75347f5659448e0e037d78202cfb674d43fbde22847df1ffc616bca8c1ba8d46383c5d583241d54d4121bf49bac8a1c988123bb82ba2fac61daab8c11
+  checksum: 30a59f502fcaa181292722ecbf58832e7c5dcfe0964de8405b4e43da48565135f1bc5e06de3ac7337eac62cc0378c37f7532fde30e130f7ca01adb5edfdc9f9c
   languageName: node
   linkType: hard
 
@@ -1802,6 +1803,13 @@ __metadata:
   version: 1.1.2
   resolution: "depd@npm:1.1.2"
   checksum: 6b406620d269619852885ce15965272b829df6f409724415e0002c8632ab6a8c0a08ec1f0bd2add05dc7bd7507606f7e2cc034fa24224ab829580040b835ecd9
+  languageName: node
+  linkType: hard
+
+"dequal@npm:^2.0.2":
+  version: 2.0.3
+  resolution: "dequal@npm:2.0.3"
+  checksum: 8679b850e1a3d0ebbc46ee780d5df7b478c23f335887464023a631d1b9af051ad4a6595a44220f9ff8ff95a8ddccf019b5ad778a976fd7bbf77383d36f412f90
   languageName: node
   linkType: hard
 
@@ -4938,7 +4946,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tasks-app-nextjs@workspace:."
   dependencies:
-    "@hookform/devtools": 4.1.1
+    "@hookform/devtools": 4.2.1
     "@hookform/error-message": 2.0.0
     "@next/bundle-analyzer": 12.2.2
     "@next/eslint-plugin-next": 12.2.2
@@ -5154,6 +5162,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"use-deep-compare-effect@npm:^1.8.1":
+  version: 1.8.1
+  resolution: "use-deep-compare-effect@npm:1.8.1"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+    dequal: ^2.0.2
+  peerDependencies:
+    react: ">=16.13"
+  checksum: 2b9b6291df3f772f44d259b352e5d998963ccee0db2efeb76bb05525d928064aeeb69bb0dee5a5e428fea7cf3db67c097a770ebd30caa080662b565f6ef02b2e
+  languageName: node
+  linkType: hard
+
 "use-sync-external-store@npm:1.1.0":
   version: 1.1.0
   resolution: "use-sync-external-store@npm:1.1.0"
@@ -5174,6 +5194,15 @@ __metadata:
   version: 3.10.0
   resolution: "utility-types@npm:3.10.0"
   checksum: 8f274415c6196ab62883b8bd98c9d2f8829b58016e4269aaa1ebd84184ac5dda7dc2ca45800c0d5e0e0650966ba063bf9a412aaeaea6850ca4440a391283d5c8
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^8.3.2":
+  version: 8.3.2
+  resolution: "uuid@npm:8.3.2"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 5575a8a75c13120e2f10e6ddc801b2c7ed7d8f3c8ac22c7ed0c7b2ba6383ec0abda88c905085d630e251719e0777045ae3236f04c812184b7c765f63a70e58df
   languageName: node
   linkType: hard
 
