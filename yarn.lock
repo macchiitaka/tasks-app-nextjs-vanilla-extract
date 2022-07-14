@@ -437,9 +437,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hookform/devtools@npm:4.2.1":
-  version: 4.2.1
-  resolution: "@hookform/devtools@npm:4.2.1"
+"@hookform/devtools@npm:4.2.2":
+  version: 4.2.2
+  resolution: "@hookform/devtools@npm:4.2.2"
   dependencies:
     "@emotion/react": ^11.1.5
     "@emotion/styled": ^11.3.0
@@ -452,7 +452,7 @@ __metadata:
   peerDependencies:
     react: ">=17.0.2"
     react-dom: ">=17.0.2"
-  checksum: 30a59f502fcaa181292722ecbf58832e7c5dcfe0964de8405b4e43da48565135f1bc5e06de3ac7337eac62cc0378c37f7532fde30e130f7ca01adb5edfdc9f9c
+  checksum: ba66205da7a68029b1f5cab7f590cb1a53cbf51c09afdfbccab25acd3d5f2a6f713f8766e969a64e7f29374523ed81d5c350761ade70d52e8db2b9bd114c8bd9
   languageName: node
   linkType: hard
 
@@ -4946,7 +4946,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tasks-app-nextjs@workspace:."
   dependencies:
-    "@hookform/devtools": 4.2.1
+    "@hookform/devtools": 4.2.2
     "@hookform/error-message": 2.0.0
     "@next/bundle-analyzer": 12.2.2
     "@next/eslint-plugin-next": 12.2.2
