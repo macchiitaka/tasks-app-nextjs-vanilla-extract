@@ -1413,17 +1413,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:4.21.1":
-  version: 4.21.1
-  resolution: "browserslist@npm:4.21.1"
+"browserslist@npm:4.21.2":
+  version: 4.21.2
+  resolution: "browserslist@npm:4.21.2"
   dependencies:
-    caniuse-lite: ^1.0.30001359
-    electron-to-chromium: ^1.4.172
-    node-releases: ^2.0.5
+    caniuse-lite: ^1.0.30001366
+    electron-to-chromium: ^1.4.188
+    node-releases: ^2.0.6
     update-browserslist-db: ^1.0.4
   bin:
     browserslist: cli.js
-  checksum: 4904a9ded0702381adc495e003e7f77970abb7f8c8b8edd9e54f026354b5a96b1bddc26e6d9a7df9f043e468ecd2fcff2c8f40fc489909a042880117c2aca8ff
+  checksum: 30fe59f8b065f99665ea63819d29c797660f7975857c290f61f570403abed4d7039ca15b6fd21e39a57b87e1a9262f94676114040766fc0da6ccc11faf9fc377
   languageName: node
   linkType: hard
 
@@ -1868,10 +1868,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-to-chromium@npm:^1.4.172":
-  version: 1.4.176
-  resolution: "electron-to-chromium@npm:1.4.176"
-  checksum: fed8ed2a4d3b37ef8c67cf13ab6da6a387f6c8089ccdc54bb2ae2af48c032e67d3526150578c4314c3a98b08e1aa9fe069c5d04044562946182a106287e24752
+"electron-to-chromium@npm:^1.4.188":
+  version: 1.4.191
+  resolution: "electron-to-chromium@npm:1.4.191"
+  checksum: d7bd39517da1fc6c392e87f18df0ce8697814105a663fbc8df51a346f230920ef31adb465cc355fea0ee9c6c9fba6da653ee04f99d515f7280a50f3d394801e4
   languageName: node
   linkType: hard
 
@@ -3775,10 +3775,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-releases@npm:^2.0.5":
-  version: 2.0.5
-  resolution: "node-releases@npm:2.0.5"
-  checksum: e85d949addd19f8827f32569d2be5751e7812ccf6cc47879d49f79b5234ff4982225e39a3929315f96370823b070640fb04d79fc0ddec8b515a969a03493a42f
+"node-releases@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "node-releases@npm:2.0.6"
+  checksum: e86a926dc9fbb3b41b4c4a89d998afdf140e20a4e8dbe6c0a807f7b2948b42ea97d7fd3ad4868041487b6e9ee98409829c6e4d84a734a4215dff060a7fbeb4bf
   languageName: node
   linkType: hard
 
@@ -4961,7 +4961,7 @@ __metadata:
     "@vanilla-extract/css": 1.7.2
     "@vanilla-extract/next-plugin": 2.0.2
     axios: 0.27.2
-    browserslist: 4.21.1
+    browserslist: 4.21.2
     caniuse-lite: 1.0.30001364
     constate: 3.3.2
     eslint: 8.19.0
