@@ -36,7 +36,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "7.33.1",
     "react-is": "18.2.0",
-    "react-query": "3.39.1"
+    "react-query": "3.39.2"
   },
   "devDependencies": {
     "@hookform/devtools": "4.2.2",
