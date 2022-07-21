@@ -20,7 +20,7 @@ export const TaskList: React.FC = () => {
 
   return (
     <ul className={classes.ul}>
-      {data?.map((task) => (
+      {data.map((task) => (
         <TaskItemMemoized key={task.id} {...task} />
       ))}
     </ul>
