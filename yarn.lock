@@ -737,25 +737,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@takamachi/eslint-config@npm:2.9.1":
-  version: 2.9.1
-  resolution: "@takamachi/eslint-config@npm:2.9.1"
+"@takamachi/eslint-config@npm:2.9.2":
+  version: 2.9.2
+  resolution: "@takamachi/eslint-config@npm:2.9.2"
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^5.30.5
-    "@typescript-eslint/parser": ^5.30.5
+    "@typescript-eslint/eslint-plugin": ^5.31.0
+    "@typescript-eslint/parser": ^5.31.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-import: ^2.26.0
-    eslint-plugin-jsx-a11y: ^6.6.0
+    eslint-plugin-jsx-a11y: ^6.6.1
     eslint-plugin-node: ^11.1.0
     eslint-plugin-react: ^7.30.1
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-simple-import-sort: ^7.0.0
-    eslint-plugin-unicorn: ^43.0.1
+    eslint-plugin-unicorn: ^43.0.2
     eslint-plugin-unused-imports: ^2.0.0
   peerDependencies:
     eslint: ^8.0.0
     typescript: ^3.3.3333 || ^4.0.0
-  checksum: 773bc1126338793ff61a043c0a5c2d73de87e88af5f790e9974491bec93746a7b83a29009471e95c37c2eee1ab6f87d3d149f7ab8415c99b7f78e29ea2250ab7
+  checksum: ac76a648cad469321d649ef92298e34f21b5771037cb9b6b52df90d7c14d7b8d0515654428226ca3311c5c2a06cd9a5638619ca6b43b522ec2e48845dd2abb62
   languageName: node
   linkType: hard
 
@@ -955,7 +955,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.30.5":
+"@typescript-eslint/eslint-plugin@npm:^5.31.0":
   version: 5.31.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.31.0"
   dependencies:
@@ -978,7 +978,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.21.0, @typescript-eslint/parser@npm:^5.30.5":
+"@typescript-eslint/parser@npm:^5.21.0, @typescript-eslint/parser@npm:^5.31.0":
   version: 5.31.0
   resolution: "@typescript-eslint/parser@npm:5.31.0"
   dependencies:
@@ -2156,7 +2156,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsx-a11y@npm:^6.5.1, eslint-plugin-jsx-a11y@npm:^6.6.0":
+"eslint-plugin-jsx-a11y@npm:^6.5.1, eslint-plugin-jsx-a11y@npm:^6.6.1":
   version: 6.6.1
   resolution: "eslint-plugin-jsx-a11y@npm:6.6.1"
   dependencies:
@@ -2237,7 +2237,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:^43.0.1":
+"eslint-plugin-unicorn@npm:^43.0.2":
   version: 43.0.2
   resolution: "eslint-plugin-unicorn@npm:43.0.2"
   dependencies:
@@ -4922,7 +4922,7 @@ __metadata:
     "@hookform/error-message": 2.0.0
     "@next/bundle-analyzer": 12.2.3
     "@next/eslint-plugin-next": 12.2.3
-    "@takamachi/eslint-config": 2.9.1
+    "@takamachi/eslint-config": 2.9.2
     "@takamachi/prettier-config": 1.1.0
     "@tanstack/react-query": 4.0.10
     "@tanstack/react-query-devtools": 4.0.10

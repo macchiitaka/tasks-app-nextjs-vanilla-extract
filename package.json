@@ -41,7 +41,7 @@
   "devDependencies": {
     "@hookform/devtools": "4.2.2",
     "@next/eslint-plugin-next": "12.2.3",
-    "@takamachi/eslint-config": "2.9.1",
+    "@takamachi/eslint-config": "2.9.2",
     "@takamachi/prettier-config": "1.1.0",
     "@tanstack/react-query-devtools": "4.0.10",
     "@types/eslint": "8.4.5",
