@@ -26,7 +26,7 @@
   "dependencies": {
     "@hookform/error-message": "2.0.0",
     "@next/bundle-analyzer": "12.2.3",
-    "@tanstack/react-query": "^4.0.10",
+    "@tanstack/react-query": "4.0.10",
     "@vanilla-extract/babel-plugin": "1.1.7",
     "@vanilla-extract/css": "1.7.2",
     "@vanilla-extract/next-plugin": "2.0.2",
@@ -43,7 +43,7 @@
     "@next/eslint-plugin-next": "12.2.3",
     "@takamachi/eslint-config": "2.9.1",
     "@takamachi/prettier-config": "1.1.0",
-    "@tanstack/react-query-devtools": "^4.0.10",
+    "@tanstack/react-query-devtools": "4.0.10",
     "@types/eslint": "8.4.5",
     "@types/prettier": "2.6.4",
     "@types/react": "18.0.15",

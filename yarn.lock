@@ -784,7 +784,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/react-query-devtools@npm:^4.0.10":
+"@tanstack/react-query-devtools@npm:4.0.10":
   version: 4.0.10
   resolution: "@tanstack/react-query-devtools@npm:4.0.10"
   dependencies:
@@ -795,7 +795,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:^4.0.10":
+"@tanstack/react-query@npm:4.0.10":
   version: 4.0.10
   resolution: "@tanstack/react-query@npm:4.0.10"
   dependencies:
@@ -4924,8 +4924,8 @@ __metadata:
     "@next/eslint-plugin-next": 12.2.3
     "@takamachi/eslint-config": 2.9.1
     "@takamachi/prettier-config": 1.1.0
-    "@tanstack/react-query": ^4.0.10
-    "@tanstack/react-query-devtools": ^4.0.10
+    "@tanstack/react-query": 4.0.10
+    "@tanstack/react-query-devtools": 4.0.10
     "@types/eslint": 8.4.5
     "@types/prettier": 2.6.4
     "@types/react": 18.0.15
